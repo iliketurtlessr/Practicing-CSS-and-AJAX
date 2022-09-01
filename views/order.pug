@@ -1,0 +1,20 @@
+html
+head
+    meta(charset = "UTF-8")
+    style 
+        include ../css/order.css
+    title Order Page
+    
+body
+    include ./partials/header.pug
+
+    div
+        span#prompt Choose your favourite restaurant: #[select#restaurantSelector ]
+        span#details
+    
+    main#main
+        .grid
+            #col1.col-1
+            #col2.col-2
+            #col3.col-3
+    script(src="order.js")

@@ -1,0 +1,30 @@
+html
+head
+    meta(charset = "UTF-8")
+    style 
+        include ../css/order.css
+    title Home
+    
+body(style={"background": "lightblue"})
+    include ./partials/header.pug
+
+    #main(style={"padding-left":"10px"})
+        h3#prompt(style={"font-size":"28px"}) Hello, there. Welcome to my page!
+        p(style={"font-family":"'Lobster', cursive"}).
+            At the top you will find three clickable links which will
+            take you to its respective page, except #[a(href="/home") Home], which is where
+            you are right now ;)
+        
+        p(style={"font-family":"'Lobster', cursive"}) Here is a guide to help you know which goes where 
+        ul#message
+            li#home #[a(href="/home") Home] is just this page, nothing more.
+            |
+            li#order.
+                #[a(href="/order") Order Page] takes you to a restaurant takeout page
+                where you can order something from one of many restaurants. <br>
+                Try it, it really is fun.
+            |
+            li#statistics.
+                #[a(href="/statistics") Statistics] shows you the things related 
+                to restaurants, like how many restaurants are available, what's the 
+                most ordered item from a restaurant etc..

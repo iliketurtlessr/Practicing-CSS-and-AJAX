@@ -1,0 +1,36 @@
+html
+head
+    meta(charset = "UTF-8")
+    style 
+        include ../css/order.css
+    title Statistics
+    
+//- Declaration
+mixin mark(item)
+    span(style={"font-family": "'Kranky', cursive", "font-size": "large", "background-color":"orange"})= item
+mixin red(item)
+    h3#details(style={"float":"inherit",  "font-size":"24px", "color": "red"})= item
+
+
+body(style={"background": "pink"})
+    include ./partials/header.pug
+
+    #main
+        ul#list
+            - for (let i = 0; i < restaurants.length; i++)
+                li(style={"font-family": "'Petit Formal Script', cursive", "font-size":"medium"})
+                    +red(`${restaurants[i]}`) #[br]
+                    if stats[i].getNumOrders() != 0    
+                        div 
+                            +mark(`${stats[i].getNumOrders()}`)
+                            |  order(s) placed
+                        |
+                        div Average is 
+                            +mark(`$${stats[i].getAvgOrderTotal()}`) #[br]
+                        |
+                        div Popular item is 
+                            +mark(`${stats[i].getItemsSold()[0][0]}`)
+                            |  sold 
+                            +mark(`${stats[i].getItemsSold()[0][1]} units.`)
+                    else 
+                        div(style={"font-family": "monospace"}) No orders yet

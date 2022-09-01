@@ -1,0 +1,21 @@
+{
+  "name": "assignment2-mybasecode",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server -e js,json,pug"
+  },
+  "author": "siddharth",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

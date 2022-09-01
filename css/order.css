@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Fredericka+the+Great&family=Indie+Flower&family=Kranky&family=Source+Code+Pro:wght@500&family=Unica+One&display=swap');
+
+
+body {
+    background: linear-gradient(lightblue, pink); 
+}
+
+.grid {
+    padding-top: 12px;
+    display: grid;
+    grid-template-columns: 14% auto 25%;
+    column-gap: 10px;
+}
+.col-1 { 
+    /* width: 30%;  */
+    /* grid-area: sidebar; */
+    /* justify-content: start; */
+    /* background-color: rgb(243, 161, 158); */
+    font-family: 'Kranky', cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.col-2 { 
+    /* width: 50%;  */
+    /* background-color: aliceblue; */
+    /* justify-content: right; */
+    /* background-color: lightblue; */
+    display: inline-block;
+}
+.col-3 { 
+    box-shadow: 6px 8px 14px rgb(219, 120, 63);
+    padding: 10px 0px 20px 20px;
+    height: min-content;
+    border: 3px dashed orange;
+    background: linear-gradient(pink, lightblue);
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 500;
+    font-size: 16px;
+    color: blue;
+    /* width: 20%; */
+    /* position: fixed; */
+    /* margin-right: 4%; */
+}
+
+.sticky {
+    /* border: 3px dashed orange; */
+    position: fixed;
+    box-shadow: 16px 18px 24px rgb(219, 120, 63);
+    top: 20px;
+    right: 2%;
+    width: 30%;
+}
+
+.header {
+    padding: 5px;
+    background-color: yellow;
+    font-size: 140%;
+    max-width:max-content;
+    font-family: 'Petit Formal Script', cursive;
+    border-radius: 20px 60px 80px 60px;
+}
+#prompt {
+    color: red;
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+    font-weight: 600;
+}
+#restaurantSelector {
+    /* background-color: blue; */
+    font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+    background-color: rgb(190, 188, 188);
+    color: white;
+    border-radius: 20px 30px 80px;
+}
+#restaurantSelector:hover {
+    font-size: 16px;
+    color: black;
+    background-color: rgb(190, 188, 188, 0.6);
+    cursor: pointer;
+}
+
+#details {
+    font-family: 'Unica One', cursive;
+    font-weight: 600;
+    color: darkmagenta;
+    display: inline;
+    padding-right: 2%;
+    float: right;
+    text-align: right;
+    height: 40px;
+}
+
+mark {
+    color: inherit;
+}
+
+#main {
+    padding-top: 25px;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+} 
+
+.category{
+    font-weight: bold;
+    text-shadow: 2px 1px gold;
+    font-family: 'Kranky', cursive;
+    font-size: 22px;
+}
+
+#item {
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+}
+#item:hover {
+    color: blue;
+    cursor: pointer;
+    font-size: 19px;
+    text-shadow: 1px 1px red;
+}
+
+.cartItem {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    display: inline-flexbox;
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(12, 139, 29);
+}
+.cartItem:hover {
+    color: red;
+    cursor: pointer;
+    font-size: 17.6px;
+    text-shadow: 1px 1px blue;
+}
+
+#description {
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: 900;
+    font-size: 14px;
+    display: inline;
+    color: rgba(184, 104, 104, 0.96);
+}
+
+#price {
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 16px;
+    display: inline;
+    text-shadow: 2px 0px 14px yellow;
+}
+
+#add, #remove {
+    width: 20px;
+    display: inline;
+}
+#add:hover, #remove:hover {
+    width: 22px;
+    display: inline;
+}
+
+#submitButton {
+    margin-top: 14px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.76);
+    background-color: rgba(24, 228, 75, 0.493);
+    scale: 1.5;
+    margin-left: 12px;
+    border: 0.8px solid deeppink;
+    border-radius: 20px 30px 80px;
+    height: 20px;
+    width: 60px;
+}
+#submitButton:hover {
+    background-color: darkgreen;
+    border: 2px solid deeppink;
+    color: lightcoral;
+    cursor: pointer;
+    scale: 1.6;
+}
+
+#message {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 18px;
+    color: rgb(114, 8, 44);
+}
